@@ -54,8 +54,11 @@ ul {
 }
 
 #chatModule .content {
-  /*padding: 25px 25px 17px 26px;*/
   padding: 25px 0px 17px 0px;
+}
+
+#chatModule .preChatSurvey{
+  padding:0px 25px 0px 26px;
 }
 
 #chatModule #currentRoute {
@@ -84,8 +87,9 @@ ul {
   cursor: pointer;
   padding: 10px 25px 1px 26px;
 }
+
 #chatModule .content li:hover {
-  background: #edfbda
+  background: #edfbda;
 }
 
 /* vertical alignment of children content */
@@ -109,7 +113,7 @@ ul {
 }
 
 #chatModule .back_button {
-  padding: 22px 25px 22px 26px;
+  padding: 22px 25px 25px 26px;
 }
 
 #chatModule .back_button img{
