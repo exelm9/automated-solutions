@@ -29,7 +29,6 @@ ul{
 
 #chatModule .header{
   height: 40px;
-  width: auto;
   background: #302c2d;
   border-radius: 13px 0 0 0;
   border-bottom: 4px solid #c2ea00;
@@ -43,7 +42,7 @@ ul{
 }
 
 #chatModule .header .closeBtn{
-  float:right;
+  float: right;
   width: 15px;
   height: 15px;
   margin-right: 15px;
@@ -51,7 +50,7 @@ ul{
 }
 
 #chatModule .content{
-  padding: 25px 28px 43px 26px;
+  padding: 25px 28px 21px 26px;
 }
 
 #chatModule .current_route{
@@ -71,11 +70,11 @@ ul{
   padding-top: 25px;
   padding-bottom: 5px;
   color: #302c2d;
-  font-weight:900;
+  font-weight: 900;
 }
 
 #chatModule .content li{
-  height:40px;
+  height: 40px;
   padding: 10px 0 10px 0;
 }
 
@@ -98,10 +97,17 @@ ul{
   vertical-align: middle;
 }
 
-#chatModule .routes span{
-
+#chatModule .back_button{
+  padding-top: 20px;
 }
+
 
 #chatModule .footer{
-
+  height: 18px;
+  background-color: #e5e5e5;
 }
+#chatModule .footer img{
+  height: 14px;
+  margin-left: 5px;
+}
+    
