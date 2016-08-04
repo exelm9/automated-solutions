@@ -17,12 +17,12 @@ ul{
 
 #chatModule{
   width: 300px;
-  height: 470px;
+  height: 468px;
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   border-radius: 13px 0 0 0;
   border: 1px solid #9E9C9E;
 }
@@ -50,18 +50,18 @@ ul{
 }
 
 #chatModule .content{
-  padding: 25px 28px 21px 26px;
+  padding: 25px 28px 19px 26px;
 }
 
-#chatModule .current_route{
+#chatModule #currentRoute{
   color: #738134;
 }
 
-#chatModule .current_route .forwardSlash{
+#chatModule #currentRoute .forwardSlash{
   color: #A19EA5;
 }
 
-#chatModule .current_route span:last-child{
+#chatModule #currentRoute span:last-child{
   color: #AAA8AA;
 }
 
