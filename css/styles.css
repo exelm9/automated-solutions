@@ -1,7 +1,18 @@
+/*send hover
+aed200
+idle
+b0de00*/
+
 /* Routing Guide */
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial';
+  font-size: 13px;
+}
 
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #chatModule{
@@ -13,14 +24,15 @@ body{
   margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 13px 0 0 0;
+  border: 1px solid #9E9C9E;
 }
 
 #chatModule .header{
   height: 40px;
-  width: 100%;
+  width: auto;
   background: #302c2d;
   border-radius: 13px 0 0 0;
-  border-bottom: 4px solid #c3e900;
+  border-bottom: 4px solid #c2ea00;
 }
 
 #chatModule .header .logo{
@@ -39,19 +51,55 @@ body{
 }
 
 #chatModule .content{
-  border: 1px solid #9E9C9E;
+  padding: 25px 28px 43px 26px;
 }
 
-#chatModule .route{
-  color: #7A825E;
+#chatModule .current_route{
+  color: #738134;
 }
 
-#chatModule .route .forwardSlash{
+#chatModule .current_route .forwardSlash{
   color: #A19EA5;
 }
 
-#chatModule .route span:last-child{
+#chatModule .current_route span:last-child{
   color: #AAA8AA;
+}
+
+#chatModule .content .title{
+  font-size: 15px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  color: #302c2d;
+  font-weight:900;
+}
+
+#chatModule .content li{
+  height:40px;
+  padding: 10px 0 10px 0;
+}
+
+#chatModule .content li:before{
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  height: 100%;
+}
+
+#chatModule .routes .img_wrap{
+    width: 38px;
+    float: left;
+    position: relative;
+    top: 4px;
+}
+
+#chatModule .routes img{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#chatModule .routes span{
+
 }
 
 #chatModule .footer{
