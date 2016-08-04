@@ -1,0 +1,59 @@
+/* Routing Guide */
+body{
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+#chatModule{
+  width: 300px;
+  height: 470px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 13px 0 0 0;
+}
+
+#chatModule .header{
+  height: 40px;
+  width: 100%;
+  background: #302c2d;
+  border-radius: 13px 0 0 0;
+  border-bottom: 4px solid #c3e900;
+}
+
+#chatModule .header .logo{
+  height: 53px;
+  width: 96px;
+  margin-top: 7px;
+  margin-left: 12px;
+}
+
+#chatModule .header .closeBtn{
+  float:right;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+#chatModule .content{
+  border: 1px solid #9E9C9E;
+}
+
+#chatModule .route{
+  color: #7A825E;
+}
+
+#chatModule .route .forwardSlash{
+  color: #A19EA5;
+}
+
+#chatModule .route span:last-child{
+  color: #AAA8AA;
+}
+
+#chatModule .footer{
+
+}
