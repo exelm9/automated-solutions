@@ -15,6 +15,10 @@ ul {
   list-style: none;
 }
 
+.hidden {
+  display: none;
+}
+
 #chatModule {
   width: 300px;
   height: 468px;
@@ -54,7 +58,7 @@ ul {
 }
 
 #chatModule #currentRoute {
-  color: #738134;
+  color: #8c9f6f;
   padding-bottom: 25px;
 }
 
