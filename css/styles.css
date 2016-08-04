@@ -4,18 +4,18 @@ idle
 b0de00*/
 
 /* Routing Guide */
-body{
+body {
   font-family: 'Arial';
   font-size: 13px;
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-#chatModule{
+#chatModule {
   width: 300px;
   height: 468px;
   position: absolute;
@@ -27,21 +27,21 @@ ul{
   border: 1px solid #9E9C9E;
 }
 
-#chatModule .header{
+#chatModule .header {
   height: 40px;
   background: #302c2d;
   border-radius: 13px 0 0 0;
   border-bottom: 4px solid #c2ea00;
 }
 
-#chatModule .header .logo{
+#chatModule .header .logo {
   height: 53px;
   width: 96px;
   margin-top: 7px;
   margin-left: 12px;
 }
 
-#chatModule .header .closeBtn{
+#chatModule .header .closeBtn {
   float: right;
   width: 15px;
   height: 15px;
@@ -49,65 +49,155 @@ ul{
   margin-top: 15px;
 }
 
-#chatModule .content{
-  padding: 25px 28px 19px 26px;
+#chatModule .content {
+  padding: 25px 25px 17px 26px;
 }
 
-#chatModule #currentRoute{
+#chatModule #currentRoute {
   color: #738134;
+  padding-bottom: 25px;
 }
 
-#chatModule #currentRoute .forwardSlash{
+#chatModule #currentRoute .forwardSlash {
   color: #A19EA5;
 }
 
-#chatModule #currentRoute span:last-child{
+#chatModule #currentRoute span:last-child {
   color: #AAA8AA;
 }
 
-#chatModule .content .title{
-  font-size: 15px;
-  padding-top: 25px;
+#chatModule .content .title {
+  font-size: 16px;
   padding-bottom: 5px;
   color: #302c2d;
   font-weight: 900;
 }
 
-#chatModule .content li{
+#chatModule .content li {
   height: 40px;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 1px 0;
 }
 
-#chatModule .content li:before{
+#chatModule .content li:before {
   content: ' ';
   display: inline-block;
   vertical-align: middle;  /* vertical alignment of the inline element */
   height: 100%;
 }
 
-#chatModule .routes .img_wrap{
+#chatModule .routes .img_wrap {
     width: 38px;
     float: left;
     position: relative;
     top: 4px;
 }
 
-#chatModule .routes img{
+#chatModule .routes img {
   display: inline-block;
   vertical-align: middle;
 }
 
-#chatModule .back_button{
-  padding-top: 20px;
+#chatModule .back_button {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+#chatModule .back_button img{
+  cursor: pointer;
+  padding: 6px;
+  position: relative;
+  left: -6px;
 }
 
 
-#chatModule .footer{
+
+#chatModule .footer {
   height: 18px;
   background-color: #e5e5e5;
 }
-#chatModule .footer img{
+#chatModule .footer img {
   height: 14px;
   margin-left: 5px;
 }
+
+/* Pre-Chat Survey */
+#chatModule .preChatSurvey input {
+  margin-top: 7px;
+  padding-left: 44px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 200px;
+  height: 32px;
+  font-size: 13px;
+}
+
+#chatModule .preChatSurvey .label {
+  padding-top: 26px;
+  font-size: 14px;
+}
+
+#chatModule .preChatSurvey .name .label {
+  padding-top: 17px;
+}
+
+#chatModule .preChatSurvey #preChatFullName {
+  background: url(../assets/icon-form-avatar.png) no-repeat 7px 7px;
+}
+
+#chatModule .preChatSurvey #preChatMobilePhoneNumber {
+  background: url(../assets/icon-form-phone.png) no-repeat 7px 7px;
+}
+
+#chatModule .select-style {
+    border: 1px solid #cdcdcd;
+    width: 246px;
+    margin-top: 7px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: url(../assets/select-box-dropdown-arrows.png) no-repeat 232px 9px;;
+}
+
+#chatModule .select-style select {
+    padding: 5px 8px;
+    height: 34px;
+    width: 100%;
+    color: #2d2d2d;
+    font-size: 13px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+#chatModule .select-style select:focus {
+    outline: none;
+}
+
+
+#chatModule #preChatDescribeQuestion {
+  resize: none;
+  height: 68px;
+  width: 242px;
+  border-radius: 3px;
+  margin-top: 7px;
+  border: 1px solid #cdcdcd;
+  font-size: 13px;
+}
+
+
+#chatModule #startChat {
+  margin-top: 18px;
+  margin-bottom: 34px;
+  height: 54px;
+}
+
+#chatModule #startChat img {
+  float: right;
+  cursor: pointer;
+}
+
+
+
+
     
