@@ -54,12 +54,14 @@ ul {
 }
 
 #chatModule .content {
-  padding: 25px 25px 17px 26px;
+  /*padding: 25px 25px 17px 26px;*/
+  padding: 25px 0px 17px 0px;
 }
 
 #chatModule #currentRoute {
   color: #8c9f6f;
-  padding-bottom: 25px;
+  padding: 0px 25px 25px 26px;
+
 }
 
 #chatModule #currentRoute .forwardSlash {
@@ -72,20 +74,25 @@ ul {
 
 #chatModule .content .title {
   font-size: 16px;
-  padding-bottom: 5px;
+  padding: 0px 25px 5px 26px;
   color: #302c2d;
   font-weight: 900;
 }
 
 #chatModule .content li {
   height: 40px;
-  padding: 10px 0 1px 0;
+  cursor: pointer;
+  padding: 10px 25px 1px 26px;
+}
+#chatModule .content li:hover {
+  background: #edfbda
 }
 
+/* vertical alignment of children content */
 #chatModule .content li:before {
   content: ' ';
   display: inline-block;
-  vertical-align: middle;  /* vertical alignment of the inline element */
+  vertical-align: middle;
   height: 100%;
 }
 
@@ -102,8 +109,7 @@ ul {
 }
 
 #chatModule .back_button {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 22px 25px 22px 26px;
 }
 
 #chatModule .back_button img{
