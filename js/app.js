@@ -1,10 +1,10 @@
 // App js
 (function() {
 
+  /* EVENTS */
   $('#chatModule .billPayments').on('click', function(e){
     e.preventDefault();
     $('#chatModule .routes').hide();
-    $('#chatModule').css({'height': '623px'});
     $('#chatModule .preChatSurvey').removeClass('hidden');
   })
 
@@ -13,6 +13,18 @@
     formValidation();
   })
 
+  $('#chatModule #preChatStateLocation').on('change', function(e){
+    e.preventDefault();
+    $(this).removeClass('focus');
+    if($(this).val() === "California"){
+      $(this).addClass('focus');
+      $(this).parent().removeClass('error');
+
+      addWherePhonePurchasedField();
+    }
+  })
+
+  /* FORM VALIDATION */
   function formValidation(){
     clearErrors();
 
@@ -76,6 +88,34 @@
   function clearErrors(){
     $('#chatModule .errorMessage').addClass('hidden');
     $('#chatModule .preChatSurvey .formField').parent().removeClass('error');
+  }
+
+  function addWherePhonePurchasedField(){
+    var templateHtml = 
+      '<div class="phonePurchased">\
+        <div class="label">Was your phone purchased in CA?*</div>\
+        <div class="select-style">\
+          <select class="formField" id="preChatPhonePurchased">\
+            <option selected disabled hidden style="display: none" value="">Select one</option>\
+            <option value="yes">Yes</option>\
+            <option value="no">No</option>\
+          </select>\
+          <div class="errorMessage hidden">State is a required field.</div>\
+        </div>\
+      </div>';
+
+    $('#chatModule .state').after(templateHtml);
+    setEventsForDynamicContent();
+  }
+
+  function setEventsForDynamicContent(){
+    $('#chatModule #preChatPhonePurchased').on('change', function(e){
+      e.preventDefault();
+      $(this).removeClass('focus');
+      if($(this).val() === "yes"){
+        $(this).addClass('focus');
+      }
+    })
   }
 
 })();

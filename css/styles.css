@@ -21,8 +21,6 @@ ul {
 
 #chatModule {
   width: 300px;
-  height: 468px;
-  position: absolute;
   bottom: 0;
   right: 0;
   margin-right: 10px;
@@ -160,19 +158,27 @@ ul {
   font-size: 13px;
 }
 
+#chatModule .preChatSurvey input:focus {
+ background-color: #edfbd8 !important;
+ outline: none;
+}
+
 #chatModule .preChatSurvey .error input {
   color: #e2231b;
-  background-color: #fdcdcd !important;
+  background-color: #fdcdcd;
+  border: 1px solid #e2231b;
 }
 
 #chatModule .preChatSurvey .error select {
   color: #e2231b;
-  background-color: #fdcdcd !important;
+  background-color: #fdcdcd;
+  border: 1px solid #e2231b;
 }
 
 #chatModule .preChatSurvey .error textarea {
   color: #e2231b;
-  background-color: #fdcdcd !important;
+  background-color: #fdcdcd;
+  border: 1px solid #e2231b !important;
 }
 
 #chatModule .preChatSurvey .label {
@@ -185,20 +191,26 @@ ul {
 }
 
 #chatModule .preChatSurvey #preChatFullName {
-  background: url(../assets/icon-form-avatar.png) no-repeat 7px 7px;
+  background-image: url(../assets/icon-form-avatar.png);
+  background-position: 7px 7px;
+  background-repeat: no-repeat;
 }
 
 #chatModule .preChatSurvey #preChatMobilePhoneNumber {
-  background: url(../assets/icon-form-phone.png) no-repeat 7px 7px;
+  background-image: url(../assets/icon-form-phone.png);
+  background-position: 7px 7px;
+  background-repeat: no-repeat;
 }
 
 #chatModule .select-style {
-    border: 1px solid #cdcdcd;
-    width: 246px;
-    margin-top: 7px;
-    border-radius: 3px;
-    overflow: hidden;
-    background: url(../assets/select-box-dropdown-arrows.png) no-repeat 232px 9px;;
+  border: 1px solid #cdcdcd;
+  width: 246px;
+  margin-top: 7px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-image: url(../assets/select-box-dropdown-arrows.png);
+  background-position: 232px 9px;
+  background-repeat: no-repeat;
 }
 
 #chatModule .select-style select {
@@ -209,15 +221,19 @@ ul {
     font-size: 13px;
     border: none;
     box-shadow: none;
-    background: transparent;
-    background-image: none;
-    -webkit-appearance: none;
 }
 
 #chatModule .select-style select:focus {
     outline: none;
 }
 
+#chatModule #preChatStateLocation.focus{
+ background-color: #edfbd8;
+}
+
+#chatModule #preChatPhonePurchased.focus{
+ background-color: #edfbd8;
+}
 
 #chatModule #preChatDescribeQuestion {
   resize: none;
@@ -227,6 +243,11 @@ ul {
   margin-top: 7px;
   border: 1px solid #cdcdcd;
   font-size: 13px;
+}
+
+#chatModule #preChatDescribeQuestion:focus {
+  background-color: #edfbd8;
+  outline: none;
 }
 
 
