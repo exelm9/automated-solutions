@@ -5,6 +5,7 @@
   $('#chatModule .billPayments').on('click', function(e){
     e.preventDefault();
     $('#chatModule .routes').hide();
+    $('#chatModule').css({'height': '623px'});
     $('#chatModule .preChatSurvey').removeClass('hidden');
   })
 
@@ -43,8 +44,12 @@
       }
     })
 
-    if( $('.errorMessage').is(':visible') ){
-      console.log('error')
+    // if pass all validation redirect to phone agent
+    if( !($('.errorMessage').is(':visible')) ){
+      $('.routes').hide();
+      $('.preChatSurvey').hide();
+      $('.footer').css({marginTop:"563px"});
+      $('#chatModule .title').text('Congratulations!! You have reached the chat agent.')
     }
   }
 
@@ -104,6 +109,7 @@
         </div>\
       </div>';
 
+    $('#chatModule').css({'height': '708px'});
     $('#chatModule .state').after(templateHtml);
     setEventsForDynamicContent();
   }

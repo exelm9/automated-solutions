@@ -21,10 +21,8 @@ ul {
 
 #chatModule {
   width: 300px;
-  bottom: 0;
-  right: 0;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  height: 468px;
+  margin-left: 20px;
   border-radius: 13px 0 0 0;
   border: 1px solid #9E9C9E;
 }
