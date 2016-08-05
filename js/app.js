@@ -20,9 +20,8 @@
     if($(this).val() === "California"){
       $(this).addClass('focus');
       $(this).parent().removeClass('error');
-      console.log($(this))
-      lol = $(this)
       $(this).siblings('.errorMessage').addClass('hidden');
+      $('#chatModule .preChatSurvey select.formField').css({'backgroundPosition':'214px 40px'})
 
       addWherePhonePurchasedField();
     }
@@ -60,6 +59,7 @@
     // test for space between two letters
     var value = element.val().trim();
     if( !(value.match(' ')) ){
+      element.css({'backgroundPosition':'7px 7px, 214px 7px'});
       showChatErrorMessage(element);
     }
   }
@@ -69,6 +69,7 @@
     // enforces xxx-xxx-xxxx numbers format
     var phoneNumberPattern = /^\(?(\d{3})\)?[- ](\d{3})[- ](\d{4})$/;
     if( !(phoneNumberPattern.test(value)) ){
+      element.css({'backgroundPosition':'7px 7px, 214px 7px'});
       showChatErrorMessage(element);
     }
   }
@@ -76,6 +77,7 @@
   function validateStateLocation(element){
     var value = element.val();
     if( value === null ){
+      element.css({'backgroundPosition':'214px 7px'});
       showChatErrorMessage(element);
     }
   }
@@ -83,6 +85,7 @@
   function validateDescribeQuestion(element){
     var value = element.val().trim();
     if( value === ""){
+      element.css({'backgroundPosition':'214px 7px'});
       showChatErrorMessage(element);
     }
     
@@ -96,6 +99,9 @@
   function clearErrors(){
     $('#chatModule .errorMessage').addClass('hidden');
     $('#chatModule .preChatSurvey .formField').parent().removeClass('error');
+    $('#chatModule .preChatSurvey input.formField').css({'backgroundPosition':'7px 7px, 214px 40px'})
+    $('#chatModule .preChatSurvey select.formField').css({'backgroundPosition':'214px 40px'})
+    $('#chatModule .preChatSurvey textarea.formField').css({'backgroundPosition':'7px 7px, 214px 40px'})
   }
 
   function addWherePhonePurchasedField(){

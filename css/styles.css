@@ -168,7 +168,6 @@ ul {
 }
 
 #chatModule .preChatSurvey .error select {
-  color: #e2231b;
   background-color: #fdcdcd;
   border: 1px solid #e2231b;
 }
@@ -177,6 +176,10 @@ ul {
   color: #e2231b;
   background-color: #fdcdcd;
   border: 1px solid #e2231b !important;
+  background-image:url(../assets/icon-form-error.png);
+  background-position: 214px 7px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
 }
 
 #chatModule .preChatSurvey .label {
@@ -189,14 +192,16 @@ ul {
 }
 
 #chatModule .preChatSurvey #preChatFullName {
-  background-image: url(../assets/icon-form-avatar.png);
-  background-position: 7px 7px;
+  background-image: url(../assets/icon-form-avatar.png), url(../assets/icon-form-error.png);
+  background-position: 7px 7px, 214px 40px;
+  background-size: 20px 20px, 16px 16px;
   background-repeat: no-repeat;
 }
 
 #chatModule .preChatSurvey #preChatMobilePhoneNumber {
-  background-image: url(../assets/icon-form-phone.png);
-  background-position: 7px 7px;
+  background-image: url(../assets/icon-form-phone.png), url(../assets/icon-form-error.png);
+  background-position: 7px 7px, 214px 40px;
+  background-size: 20px 20px, 16px 16px;
   background-repeat: no-repeat;
 }
 
@@ -206,8 +211,12 @@ ul {
   margin-top: 7px;
   border-radius: 3px;
   overflow: hidden;
-  background-image: url(../assets/select-box-dropdown-arrows.png);
-  background-position: 232px 9px;
+}
+
+#chatModule #preChatStateLocation{
+  background-image: url(../assets/icon-form-error.png);
+  background-position: 214px 40px;
+  background-size: 16px 16px;
   background-repeat: no-repeat;
 }
 
