@@ -135,6 +135,21 @@ ul {
 }
 
 /* Pre-Chat Survey */
+#chatModule .preChatSurvey .name,
+#chatModule .preChatSurvey .number,
+#chatModule .preChatSurvey .state,
+#chatModule .preChatSurvey .label {
+  position: relative;
+}
+
+#chatModule .preChatSurvey .errorMessage {
+  position: absolute;
+  right: 0;
+  bottom: -19px;
+  color: #f6a5a4;
+}
+
+
 #chatModule .preChatSurvey input {
   margin-top: 7px;
   padding-left: 44px;
@@ -143,6 +158,21 @@ ul {
   width: 200px;
   height: 32px;
   font-size: 13px;
+}
+
+#chatModule .preChatSurvey .error input {
+  color: #e2231b;
+  background-color: #fdcdcd !important;
+}
+
+#chatModule .preChatSurvey .error select {
+  color: #e2231b;
+  background-color: #fdcdcd !important;
+}
+
+#chatModule .preChatSurvey .error textarea {
+  color: #e2231b;
+  background-color: #fdcdcd !important;
 }
 
 #chatModule .preChatSurvey .label {
@@ -201,8 +231,8 @@ ul {
 
 
 #chatModule #startChat {
-  margin-top: 18px;
-  margin-bottom: 34px;
+  margin-top: 23px;
+  margin-bottom: 29px;
   height: 54px;
 }
 

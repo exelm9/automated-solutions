@@ -48,24 +48,28 @@
     <div class="preChatSurvey hidden">
       <div class="name">
         <div class="label">Full Name:*</div>
-        <input id="preChatFullName" placeholder="John Doe" />
+        <input class="formField" id="preChatFullName" placeholder="John Doe" />
+        <div class="errorMessage hidden">Full Name is a required field.</div>
       </div>
       <div class="number">
         <div class="label">Mobile Phone Number:*</div>
-        <input id="preChatMobilePhoneNumber" placeholder="ex: 123-123-1234" />
+        <input class="formField" id="preChatMobilePhoneNumber" placeholder="ex: 123-123-1234" />
+        <div class="errorMessage hidden">Please enter a valid phone number.</div>
       </div>
       <div class="state">
         <div class="label">State:*</div>
         <div class="select-style">
-          <select>
+          <select class="formField" id="preChatStateLocation">
             <option selected disabled hidden style='display: none' value=''>Select one</option>
             <option id="preChatState" value="California">California</option>
           </select>
+          <div class="errorMessage hidden">State is a required field.</div>
         </div>
       </div>
       <div class="describeQuestion">
         <div class="label">Describe your question:*
-        <textarea id="preChatDescribeQuestion"></textarea>
+        <textarea id="preChatDescribeQuestion" class="formField"></textarea>
+        <div class="errorMessage hidden">Description is a required field.</div>
       </div>
       <div id="startChat"><img src="../assets/btn-chat.png"/></div>
       </div>
