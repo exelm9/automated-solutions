@@ -20,6 +20,9 @@
     if($(this).val() === "California"){
       $(this).addClass('focus');
       $(this).parent().removeClass('error');
+      console.log($(this))
+      lol = $(this)
+      $(this).siblings('.errorMessage').addClass('hidden');
 
       addWherePhonePurchasedField();
     }
